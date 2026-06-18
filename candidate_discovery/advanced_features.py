@@ -250,8 +250,8 @@ def compare_candidates(cand_a: Dict, cand_b: Dict) -> Tuple[pd.DataFrame, str]:
 
     comp_data = {
         "Metric": ["Final Score", "Semantic Match", "Skill Match", "Behavioral Score", "Experience (YoE)", "Total Skills Found"],
-        name_a: [f"{score_a}%", f"{round(sem_a, 2)}%", f"{round(skill_a, 2)}%", f"{round(beh_a, 2)}%", f"{yoe_a} years", proj_count_a],
-        name_b: [f"{score_b}%", f"{round(sem_b, 2)}%", f"{round(skill_b, 2)}%", f"{round(beh_b, 2)}%", f"{yoe_b} years", proj_count_b],
+        name_a: [f"{score_a}%", f"{round(sem_a, 2)}%", f"{round(skill_a, 2)}%", f"{round(beh_a, 2)}%", f"{yoe_a} years", str(proj_count_a)],
+        name_b: [f"{score_b}%", f"{round(sem_b, 2)}%", f"{round(skill_b, 2)}%", f"{round(beh_b, 2)}%", f"{yoe_b} years", str(proj_count_b)],
         "Winner": [
             get_winner(score_a, score_b),
             get_winner(sem_a, sem_b),
