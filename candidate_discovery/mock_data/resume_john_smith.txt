@@ -1,0 +1,34 @@
+John Smith
+Email: john.smith@email.com
+Phone: +1 555-014-9988
+LinkedIn: linkedin.com/in/johnsmith
+Location: Chicago, IL
+
+PROFESSIONAL SUMMARY
+Software Engineer with 3 years of experience building enterprise web applications using Java and Spring Boot. Skilled in object-oriented programming, relational databases, and RESTful API development. Eager to expand skills into python backend and cloud environments.
+
+TECHNICAL SKILLS
+- Languages: Java, JavaScript, SQL, HTML, CSS
+- Frameworks: Spring Boot, Hibernate, Angular
+- Databases: MySQL, Oracle
+- Tools: Git, Maven, Jenkins, Jira
+- Soft Skills: Teamwork, Communication, Problem Solving
+
+PROFESSIONAL EXPERIENCE
+Software Engineer | Enterprise Solutions | 2023 - Present
+- Developed and maintained Java enterprise applications using Spring Boot and Hibernate.
+- Collaborated with QA team to write JUnit test cases, increasing test coverage from 60% to 85%.
+- Integrated third-party payment gateways via REST APIs.
+- Participated in Agile sprint planning and retrospective meetings.
+
+Associate Developer | CodeCrafters | 2021 - 2023
+- Developed UI pages using HTML, CSS, and Angular, and connected them to Java backends.
+- Wrote basic SQL queries and stored procedures in MySQL.
+- Resolved bug tickets and supported application deployment.
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Illinois, 2017 - 2021
+
+CERTIFICATIONS
+- Oracle Certified Associate, Java SE 8 Programmer

@@ -1,0 +1,37 @@
+Jane Doe
+Email: jane.doe@email.com
+Phone: +1 555-019-2834
+LinkedIn: linkedin.com/in/janedoe
+GitHub: github.com/janedoe
+Location: San Francisco, CA
+
+PROFESSIONAL SUMMARY
+Senior Software Engineer with 6 years of experience specializing in Python backend development, cloud architecture (AWS), and database optimization. Proven track record of leading small Agile teams to deliver high-quality scalable SaaS applications.
+
+TECHNICAL SKILLS
+- Languages: Python, JavaScript, SQL, Bash
+- Frameworks: Django, FastAPI, Flask, React
+- Databases: PostgreSQL, MySQL, Redis
+- Cloud & DevOps: AWS (EC2, ECS, Lambda, RDS), Docker, Kubernetes, Git, CI/CD (GitHub Actions)
+- Methodologies: Agile, Scrum, Kanban, Jira
+- Soft Skills: Leadership, Communication, Problem Solving, Collaboration
+
+PROFESSIONAL EXPERIENCE
+Senior Software Engineer | TechCorp Inc. | 2022 - Present
+- Led a team of 4 backend developers to redesign a legacy monolithic billing system into a Dockerized Django microservices architecture, improving request response times by 35%.
+- Built and maintained secure cloud infrastructure on AWS, utilizing ECS, Lambda, and RDS.
+- Managed database schemas and optimized complex SQL queries in PostgreSQL, reducing query latency by 45%.
+- Facilitated daily Scrum standups, sprint planning, and retrospective meetings as a Scrum Master.
+
+Software Engineer | DevSols Ltd. | 2020 - 2022
+- Developed scalable REST APIs using Python, Django, and PostgreSQL.
+- Setup Dockerized development environments, eliminating environment drift between local setup and production.
+- Collaborated closely with UI/UX designers to implement interactive dashboard features using React.
+
+EDUCATION
+Master of Computer Applications (MCA)
+Stanford University, 2018 - 2020
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- Scrum Alliance Certified ScrumMaster (CSM)

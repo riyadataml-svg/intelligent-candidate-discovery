@@ -47,3 +47,9 @@ ENV/purelib/
 # OS
 .DS_Store
 Thumbs.db
+
+# Generated files
+*.gif
+*.xlsx
+*.csv
+

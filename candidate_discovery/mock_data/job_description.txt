@@ -1,0 +1,17 @@
+Senior Software Engineer
+
+We are looking for a Senior Software Engineer with 5+ years of experience in Python, Django, and AWS.
+Key Responsibilities:
+- Build scalable backend APIs using Python and Django.
+- Deploy and manage infrastructure on AWS (EC2, ECS, RDS).
+- Work with SQL databases, specifically PostgreSQL.
+- Utilize Docker for containerization and CI/CD pipelines.
+- Lead a small team of engineers in an Agile/Scrum environment.
+- Collaborate with product managers and UI/UX designers.
+
+Requirements:
+- 5+ years of experience in software engineering.
+- Deep knowledge of Python, Django, and SQL.
+- Hands-on experience with AWS and Docker.
+- Experience with Agile development methodology.
+- Excellent communication and leadership skills.

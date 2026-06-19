@@ -287,18 +287,52 @@ st.markdown(f"""
 
 # ------------------ COMPACT ACTION PANEL ------------------
 with st.container(border=True):
+    use_demo = st.toggle("⚡ Use Pre-Loaded Demo Data (Job Description & 2 Resumes)", value=False, help="Enable this to automatically populate a sample JD and 2 mock resumes for quick demonstration.")
+    
+    import os
+    mock_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "mock_data")
+    if use_demo:
+        jd_path = os.path.join(mock_dir, "job_description.txt")
+        if os.path.exists(jd_path):
+            with open(jd_path, "r", encoding="utf-8") as f:
+                st.session_state.jd_text = f.read()
+
     col_act1, col_act2 = st.columns(2)
     with col_act1:
         # Left Column: Upload JD, JD Text Area, Blind Hiring Toggle
-        jd_file = st.file_uploader("Upload Job Description (JD)", type=["pdf", "docx", "txt"], key="jd_uploader")
-        jd_text_input = st.text_area("Or paste Job Description (JD) text here:", value=st.session_state.jd_text, height=75, placeholder="Paste Job Description text here...")
+        jd_file = st.file_uploader("Upload Job Description (JD)", type=["pdf", "docx", "txt"], key="jd_uploader", disabled=use_demo)
+        jd_text_input = st.text_area("Or paste Job Description (JD) text here:", value=st.session_state.jd_text, height=75, placeholder="Paste Job Description text here...", disabled=use_demo)
         st.write("") # Tiny spacer
         blind_hiring_enabled = st.toggle("Enable Blind Hiring Mode", value=False, help="Hide Candidate Names, Emails, Phones, Colleges, and Gender indicators.")
         
     with col_act2:
         # Right Column: Upload Resumes, Run Analysis Button
-        resume_files = st.file_uploader("Upload Candidate Resumes (Multiple allowed)", type=["pdf", "docx", "txt"], accept_multiple_files=True, key="resumes_uploader")
-        st.write("")
+        if use_demo:
+            st.success("📝 Loaded 2 demo resumes from `mock_data` directory:")
+            st.info("- `resume_jane_doe.txt` (Senior Python Engineer)\n- `resume_john_smith.txt` (Mid Java Developer)")
+            
+            # Read Demo Resumes
+            mock_filenames = ["resume_jane_doe.txt", "resume_john_smith.txt"]
+            resume_files = []
+            
+            class MockUploadedFile:
+                def __init__(self, name, data):
+                    self.name = name
+                    self.data = data
+                def read(self):
+                    return self.data
+                def getvalue(self):
+                    return self.data
+            
+            for fname in mock_filenames:
+                path = os.path.join(mock_dir, fname)
+                if os.path.exists(path):
+                    with open(path, "rb") as f:
+                        content = f.read()
+                    resume_files.append(MockUploadedFile(fname, content))
+        else:
+            resume_files = st.file_uploader("Upload Candidate Resumes (Multiple allowed)", type=["pdf", "docx", "txt"], accept_multiple_files=True, key="resumes_uploader")
+        
         st.write("")
         st.write("")
         run_ranking = st.button("Run Candidate Analysis", type="primary", use_container_width=True)
